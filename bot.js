@@ -212,4 +212,4 @@ client.on('guildDelete', async guild => {
     await db.delete(`${guild.id}`)
 })
 
-client.login('ODQ0NDI5NjQ5Njg1NjQzMjc0.YKSSZQ.oTCQ2EGvsawEkv8Fu3t-D3GSSEo')
+client.login('YOURBOTTOKEN')
