@@ -1,0 +1,126 @@
+client.application?.commands.create({
+        name: 'create',
+        description: `${client.user.username}: Create an Interaction Command`,
+        options: [
+            {
+                name: 'name',
+                description: 'The name of the Interaction Command (1 - 32 characters)',
+                type: 3,
+                required: true
+            },
+            {
+                name: 'description',
+                description: 'The description of the Interaction Command (1 - 100 characters)',
+                type: 3,
+                required: true
+            },
+            {
+                name: 'content',
+                description: 'The content of the Interaction Command (1 - 1000 characters)',
+                type: 3,
+                required: true
+            },
+            {
+                name: 'ephemeral',
+                description: 'Should the content be Ephemeral (default: false)',
+                type: 5
+            },
+            {
+                name: 'default_permission',
+                description: 'Should the Interaction Command be usable (default: true)',
+                type: 5
+            }
+        ]
+    })
+    client.application?.commands.create({
+        name: 'patch',
+        description: `${client.user.username}: Patch an Interaction Command`,
+        options: [
+            {
+                name: 'name',
+                description: 'The name of the Interaction Command',
+                type: 3,
+                required: true
+            },
+            {
+                name: 'new_name',
+                description: 'The new name of the Interaction Command (1 - 32 characters)',
+                type: 3
+            },
+            {
+                name: 'description',
+                description: 'The new description of the Interaction Command (1 - 100 characters)',
+                type: 3,
+            },
+            {
+                name: 'content',
+                description: 'The new content of the Interaction Command (1 - 1000 characters)',
+                type: 3,
+            },
+            {
+                name: 'ephemeral',
+                description: 'Should the content be Ephemeral (default: false)',
+                type: 5
+            },
+            {
+                name: 'default_permission',
+                description: 'Should the Interaction Command be usable (default: true)',
+                type: 5
+            }
+        ]
+    })
+    client.application?.commands.create({
+        name: 'delete',
+        description: `${client.user.username}: Delete an Interaction Command`,
+        options: [
+            {
+                name: 'name',
+                description: 'The name of the Interaction Command',
+                type: 3,
+                required: true
+            }
+        ]
+    })
+    client.application?.commands.create({
+        name: 'fork',
+        description: `${client.user.username}: Fork an Interaction Command`,
+        options: [
+            {
+                name: 'name',
+                description: 'The name of the Interaction Command',
+                type: 3,
+                required: true
+            },
+            {
+                name: 'guild_id',
+                description: 'The guild to fork the Interaction Command from (default: this guild)',
+                type: 3
+            },
+            {
+                name: 'new_name',
+                description: 'The new name of the Interaction Command (1 - 32 characters)',
+                type: 3
+            },
+            {
+                name: 'description',
+                description: 'The new description of the Interaction Command (1 - 100 characters)',
+                type: 3
+            },
+            {
+                name: 'content',
+                description: 'The new content of the Interaction Command (1 - 1000 characters)',
+                type: 3
+            },
+            {
+                name: 'ephemeral',
+                description: 'Should the content be Ephemeral (default: false)',
+                type: 5
+            },
+            {
+                name: 'default_permission',
+                description: 'Should the Interaction Command be usable (default: true)',
+                type: 5
+            }
+        ]
+    })
+//copy paste this in the ready event of bot.js
